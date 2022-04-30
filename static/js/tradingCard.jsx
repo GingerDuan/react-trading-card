@@ -49,7 +49,7 @@ const tradingCardData = [
     cardId: 8,
   },
 ];
-
+//prepare for value, unpack
 function TradingCard(props) {
   return (
     <div className="card">
@@ -59,13 +59,7 @@ function TradingCard(props) {
     </div>
   );
 }
-
-ReactDOM.render(
-  <TradingCardContainer />,
-  document.querySelector('#all-cards'),
-);
-
-
+//put the value in the container
 function TradingCardContainer() {
   const tradingCards = [];
 
@@ -83,6 +77,13 @@ function TradingCardContainer() {
     </React.Fragment>
   );
 }
+//put the containers in the html page in place
+ReactDOM.render(
+  <TradingCardContainer />,
+  document.querySelector('#all-cards'),
+);
+
+
 // ReactDOM.render(
 //   <TradingCard name="Balloonicorn" skill="video games" imgUrl="/static/img/balloonicorn.jpg" />,
 //   document.querySelector('#balloonicorn'),
